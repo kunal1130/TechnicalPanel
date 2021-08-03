@@ -1,0 +1,85 @@
+package com.example.demo.technicalpanel;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class TechnicalPanel {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long panelId;	
+	
+	private String panel;
+	
+	private String techStream;
+	
+	private String detailTechStack;
+	
+	private AnswerEnum firstLevel;
+	
+	private AnswerEnum secondLevel;
+	
+	private  AnswerEnum managerialLevel;
+
+	public Long getPanelId() {
+		return panelId;
+	}
+
+	public void setPanelId(Long panelId) {
+		this.panelId = panelId;
+	}
+
+	public String getPanel() {
+		return panel;
+	}
+
+	public void setPanel(String panel) {
+		this.panel = panel;
+	}
+
+	public String getTechStream() {
+		return techStream;
+	}
+
+	public void setTechStream(String techStream) {
+		this.techStream = techStream;
+	}
+
+	public String getDetailTechStack() {
+		return detailTechStack;
+	}
+
+	public void setDetailTechStack(String detailTechStack) {
+		detailTechStack = detailTechStack;
+	}
+
+	public AnswerEnum getFirstLevel() {
+		return firstLevel;
+	}
+
+	public void setFirstLevel(AnswerEnum firstLevel) {
+		this.firstLevel = firstLevel;
+	}
+
+	public AnswerEnum getSecondLevel() {
+		return secondLevel;
+	}
+
+	public void setSecondLevel(AnswerEnum secondLevel) {
+		this.secondLevel = secondLevel;
+	}
+
+	public AnswerEnum getManagerialLevel() {
+		return managerialLevel;
+	}
+
+	public void setManagerialLevel(AnswerEnum managerialLevel) {
+		this.managerialLevel = managerialLevel;
+	}
+	
+	
+
+}

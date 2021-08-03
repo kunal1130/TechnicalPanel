@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.example.demo.technicalpanel;
+
+/**
+ * @author KUNAL
+ *
+ */
+public enum AnswerEnum {
+
+	YES("Yes"),
+	NO("No");
+	
+
+	private String value;
+
+	AnswerEnum(String value) {
+		this.value=value;
+	}	
+	
+	public String getValue() {
+	  return value;
+    }
+	
+}

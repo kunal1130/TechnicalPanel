@@ -1,0 +1,7 @@
+package com.example.demo.technicalpanel;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TechnicalPanelRepository extends JpaRepository<TechnicalPanel, Long> {
+
+}

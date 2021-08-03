@@ -1,0 +1,24 @@
+package com.example.demo.technicalpanel;
+
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.web.method.support.HandlerMethodArgumentResolver;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@SpringBootApplication
+@EnableJpaRepositories
+public class TechnicalPanelApplication implements WebMvcConfigurer  {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TechnicalPanelApplication.class, args);
+	}
+
+	@Override
+	public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
+		WebMvcConfigurer.super.addArgumentResolvers(resolvers);
+	}
+
+}
